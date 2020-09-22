@@ -56,7 +56,7 @@ const ProjectCardContainer = styled(Link)`
 
 const ProjectCardContent = styled("div")`
     background: white;
-    padding: 4em 3em 2.25em 3em;
+    padding: 3em 3em 2.25em 3em;
     position: relative;
 
     &:before {
@@ -122,11 +122,8 @@ const ProjectCardImageContainer = styled("div")`
     align-items: flex-end;
     overflow: hidden;
     position: relative;
-    padding-left: 2em;
-    padding-right: 2em;
 
     @media(max-width:${dimensions.maxwidthTablet}px) {
-        padding-top: 3em;
         max-height: 200px;
         flex-direction: column;
         align-items: center;
@@ -147,13 +144,7 @@ const ProjectCardImageContainer = styled("div")`
     }
 
     img {
-        max-width: 400px;
-        width: 100%;
-        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
-
-        @media(max-width:${dimensions.maxwidthTablet}px) {
-            max-width: 300px;
-        }
+        width: 115%;
     }
 `
 
@@ -170,7 +161,7 @@ const ProjectCard = ({ category, title, description, thumbnail, uid}) => (
                 {RichText.render(description)}
             </ProjectCardBlurb>
             <ProjectCardAction className="ProjectCardAction">
-                Details <span>&#8594;</span>
+                Saiba mais <span>&#8594;</span>
             </ProjectCardAction>
         </ProjectCardContent>
         <ProjectCardImageContainer className="ProjectCardImageContainer">

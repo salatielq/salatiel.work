@@ -15,11 +15,10 @@ const ProjectHeroContainer = styled("div")`
     align-items: flex-end;
     overflow: hidden;
     position: relative;
-    padding-top: 2.25em;
     margin-bottom: 3.5em;
 
     img {
-        max-width: 600px;
+        width: 100%;
     }
 `
 
@@ -104,7 +103,7 @@ const Project = ({ project, meta }) => {
                     {RichText.render(project.project_description)}
                     <WorkLink to={"/work"}>
                         <Button className="Button--secondary">
-                            See other work
+                            Veja outros projetos
                         </Button>
                     </WorkLink>
                 </ProjectBody>

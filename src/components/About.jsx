@@ -97,9 +97,9 @@ const About = ({ bio, socialLinks }) => (
             {RichText.render(bio)}
         </AboutBio>
         <AboutActions>
-            <a href="mailto:marguerite.roth@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a  href="https://www.linkedin.com/in/salatiel-queiroz-694317112/" target="_blank" rel="noopener noreferrer">
                 <Button className="Button--secondary">
-                    Email me
+                    Fale comigo
                 </Button>
             </a>
         </AboutActions>

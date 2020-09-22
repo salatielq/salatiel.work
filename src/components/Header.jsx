@@ -18,10 +18,10 @@ const HeaderContent = styled("div")`
 const HeaderLinks = styled("div")`
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 7em;
+    grid-gap: 3em;
     justify-content: flex-end;
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
 
     @media(max-width: ${dimensions.maxwidthTablet}px) {
         grid-gap: 5.5em;
@@ -79,16 +79,14 @@ const Header = () => (
                 <Logo/>
             </Link>
             <HeaderLinks>
-                <Link
+            <Link
                     activeClassName="Link--is-active"
                     to="/work">
-                    Work
+                    Projetos
                 </Link>
-                <Link
-                    activeClassName="Link--is-active"
-                    to="/blog">
-                    Blog
-                </Link>
+                <a target="_blank" href="https://www.linkedin.com/in/salatiel-queiroz-694317112/" rel="noopener noreferrer">
+                    Contato ↗
+                </a> 
             </HeaderLinks>
         </HeaderContent>
     </HeaderContainer>
